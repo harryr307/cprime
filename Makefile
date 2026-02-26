@@ -3,7 +3,7 @@ CCLD=gcc
 PROJNM=cprime
 OBJS=main.o
 CCA=-c -Wall
-CCLDA=-std=gnu99 -o $(PROJNM)
+CCLDA=-std=gnu99 -o $(PROJNM) -lpthread
 
 $(PROJNM): $(OBJS)
 	$(CCLD) $(CCLDA) $(OBJS)
